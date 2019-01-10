@@ -3,10 +3,10 @@
 ### Boost C++ Libraries 1.60.0 Pre-compiled for OSX
 ![image](https://github.com/danoli3/ofxOSXBoost/blob/master/ofxaddons_thumbnail.png)
 
-- Addon with Boost 1.60.0 for OSX / Xcode 
+- Addon with Boost 1.60.0 for OSX / Xcode
 - Precompiled library and Command to build yourself
 - Master is currently a Fat Lib of All Standard Architectures
-- Check Branches for others or to be specific 
+- Check Branches for others or to be specific
 - Designed for use as an open frameworks addon, however should definitely work for other OSX projects
 - Master currently built with ```libstd++``` and using ```std=c++89```
 - Alternate Branch for ```libc++``` and ```std=c++11``` (libc++)
@@ -26,18 +26,7 @@
 
 ### How To Link to an Xcode Project?
 
-In Xcode Build Settings for your project:
-
-- Add to Library Search Paths ( ```LIBRARY_SEARCH_PATHS``` ) ```$(SRCROOT)/../../../addons/ofxOSXBoost/libs/boost/lib/osx ```
-- Add to Header Search Paths ( ```HEADER_SEARCH_PATHS``` )  
-```$(SRCROOT)/../../../addons/ofxOSXBoost/libs/boost/include ```
-
-In the Target under Build Phases
-- Add to 'Link Binary With Libraries' the ```boost.a``` found in the ```ofxOSXBoost/libs/boost/lib/osx``` directory.
-
-If not openFrameworks just add the ``` libs/boost/include ``` to Header Search Paths and the  ``` libs/boost/osx ``` to Library Search Paths
-
-
+Use the Project Generator to build the project files.
 
 ============
 
@@ -61,7 +50,7 @@ See the other branches on this repository (Currently libstdc++, check branch for
 ### How to use Build Script
 
 - Download files *(suggested you download the files to addons/ofxOSXBoost for openFrameworks)*
-- Double click and run ```scripts/build-libc++``` 
+- Double click and run ```scripts/build-libc++```
 	- (this will download the 1.60.0 version of boost and begin compiling the library).
 - Once completed in the terminal continue with the next steps.
 - Add the ofxOSXBoost to your project (src and libs for your chosen architecture)
